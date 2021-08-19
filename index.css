@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body{
+    background-color: rgb(219, 201, 236);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    background: white;
+    width: 100%;
+    margin: 50px;
+    max-width: 1000px;
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1 );
+}
+
+.container .leftSide {
+    position: relative;
+    padding: 40px;
+    background-image: linear-gradient(to top left, rgb(113, 25, 177), rgb(219, 201, 236));
+}
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+.profile .image{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile .image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile h2{
+    font-size: 1.9em;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+.profile h2 span{
+    font-size: 0.5em;
+    font-weight: 200;
+}
+.contact{
+    padding-top: 80px;
+}
+.title{
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.contact ul{
+    position: relative;
+    justify-content: center;
+}
+.contact ul li{
+    list-style: none;
+    color: white;
+    position: relative;
+    margin: 10px 0px;
+    align-items: center;
+}
+
+.container  .rightSide {
+    position: relative;
+    padding: 40px;
+    background: white;
+}
+
+.aboutMe{
+    margin-bottom: 50px;
+}
+.aboutMe:last-child{
+    margin-bottom: 0px;
+}
+
+.titleAbout{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    color: rgb(113, 25, 177);
+    text-decoration: underline rgb(219, 201, 236) 5px;
+    margin: 20px 0px;
+    letter-spacing: 2px;
+}
+
+.aboutMe .education{
+    margin-top: 20px;
+}
+.text{
+    text-decoration: black;
+    text-decoration-line: underline;
+    margin-bottom: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+.aboutMe .education h5{
+    position: relative;
+    color: rgb(219, 105, 12);
+    margin-bottom: 10px;
+}
+.aboutMe .education h4{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.knowledge {
+    padding: 10px 0px 50px 0px ;
+}
+.knowledge ul li{
+    list-style: none;
+}
+
+.knowledge .percent{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(113, 25, 177);
+    display: block;
+    margin: 5px;
+    border-radius: 50px;
+}
+.knowledge .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 50px;
+    background-color: rgb(219, 105, 12);
+}
+
+.experience .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    padding-left: 100px;
+    
+}
+
+.experience .box .company_year{
+    min-width: 150px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(219, 105, 12);
+}
+
+.experience .box .role{
+    text-transform: uppercase;
+}
+
+.copyright{
+    display: flex;
+    column-gap: 30px;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.copyright img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+@media(max-width: 1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .experience .box {
+        padding-left: 0px;
+    }
+
+}
+
+@media(max-width: 600px){
+
+
+    .knowledge .percent{
+        position: relative;
+        width: 100%;
+        height: 20px;
+        background-color: rgb(113, 25, 177);
+        display: block;
+        margin: 5px;
+        border-radius: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
